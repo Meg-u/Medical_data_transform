@@ -1,0 +1,33 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Environments
+.env
+venv/
+.venv/
+env/
+ENV/
+
+# dbt artifacts
+dbt/target/
+dbt/dbt_modules/
+
+# Data files (optional)
+data/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Pytest
+.cache/
+
+# Logs
+*.log
+
+# VS Code settings (optional)
+.vscode/
+
+# Mac / Linux
+.DS_Store

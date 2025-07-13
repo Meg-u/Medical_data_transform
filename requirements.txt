@@ -1,0 +1,27 @@
+# Core Python packages
+python-dotenv==1.0.1
+
+# Telegram scraping
+telethon==1.34.0
+
+# Database
+psycopg2-binary==2.9.9
+SQLAlchemy==2.0.29
+
+# dbt
+dbt-core==1.7.14
+dbt-postgres==1.7.14
+
+# Object detection (YOLO)
+torch==2.3.0
+opencv-python==4.9.0.80
+
+# API
+fastapi==0.111.0
+uvicorn==0.30.0
+
+# Orchestration
+dagster==1.7.8
+
+# Dev tools
+pytest==8.2.2
