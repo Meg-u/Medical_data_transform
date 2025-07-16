@@ -88,17 +88,17 @@ async def scrape_channel(channel_url):
             await client.download_media(message, file=file_path)
 
             msg_dict['photo_file'] = file_path  # add to your JSON
-            print(f"✅ Downloaded photo for message ID {message.id} → {file_path}")
+            print(f"Downloaded photo for message ID {message.id} → {file_path}")
 
     # Atomic rename
     os.replace(temp_file, out_file)
 
     with open(out_file, "r", encoding="utf-8") as f:
         content = f.read()
-        print(f"✅ File starts with: {content[:10]!r}")
-        print(f"✅ File ends with: {content[-10:]!r}")
+        print(f"File starts with: {content[:10]!r}")
+        print(f"File ends with: {content[-10:]!r}")
 
-    logging.info(f"✅ Finished writing: {out_file}")
+    logging.info(f"Finished writing: {out_file}")
 
 async def main():
     for channel in CHANNELS:
