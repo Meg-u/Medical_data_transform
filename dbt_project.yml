@@ -1,12 +1,10 @@
-# dbt_project.yml
-
 name: "medical_telegram_project"
 version: "1.0"
 config-version: 2
 
 profile: "default"
 
-model-paths: ["models"]
+model-paths: ["medical_telegram_project/models"]
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
 seed-paths: ["data"]
@@ -22,7 +20,9 @@ models:
     staging:
       +schema: staging
       +materialized: view
+      +enabled: true
 
     marts:
       +schema: marts
       +materialized: table
+      +enabled: true
